@@ -1,0 +1,23 @@
+animal = ['Cow', 'Goat', 'Sheep', 'Lion', 'Monkey', 'Donkey', 'Tiger']
+
+def list_o_matic(animal_names):
+    if animal_name == '':
+        print(animal)
+        return animal.pop(), "is popped from list."
+    elif animal_name.title() in animal:
+        animal.remove(animal_names)
+        print(animal_name)
+        return "An instance of", animal_name, "is removed from list."
+    elif 'animal_names'.title() not in animal:
+        animal.append(animal_name)
+        print(animal)
+        return animal_name, "is appended to list."
+while animal:
+    animal_name = input("Enter an animal name here: ").title()
+    print("All the animals are,", animal)
+    if 'animal_names'.title() == "Quit":
+        print("Have a nice day!")
+        break
+    else:
+        print(list_o_matic('animal_names'))
+print("Goodbye!")
